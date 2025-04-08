@@ -1,15 +1,5 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "seu_arquivo_flask.py",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "seu_arquivo_flask.py"
-      }
-    ]
+    "builds": [{"src": "app.py", "use": "@vercel/python"}],
+    "routes": [{"src": "/(.*)", "dest": "app.py"}]
   }
